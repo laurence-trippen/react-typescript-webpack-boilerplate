@@ -8,9 +8,9 @@ import getPort from "get-port";
 // Plugins
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin";
-import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
-import ESLintWebpackPlugin from "eslint-webpack-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+// import ESLintWebpackPlugin from "eslint-webpack-plugin";
 
 
 export default async (env, argv) => {
@@ -61,10 +61,21 @@ export default async (env, argv) => {
         // CSS & Styles
         {
           test: /\.css$/,
-          // Executed from last to first
-          // 1. css-loader: load CSS from JS imports
-          // 2. style-loader: put CSS into <style> tag
-          use: ["style-loader", "css-loader"],
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'style-loader',
+            },
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+              }
+            },
+            {
+              loader: 'postcss-loader'
+            }
+          ]
         },
         // Raw Assets
         {

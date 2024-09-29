@@ -11,6 +11,8 @@ function App(props: AppProps) {
     <>
       <h1>{title}</h1>
       <Counter />
+
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );
 }
