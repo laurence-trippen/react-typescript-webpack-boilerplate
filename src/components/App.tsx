@@ -1,9 +1,13 @@
-import * as styles from './App.module.css';
+type AppProps = {
+  title: string;
+};
 
-function App() {
+function App(props: AppProps) {
+  const { title } = props;
+
   return (
     <div>
-      <h1 className={styles.title}>App</h1>
+      <h1 className={""}>{title}</h1>
     </div>
   );
 }

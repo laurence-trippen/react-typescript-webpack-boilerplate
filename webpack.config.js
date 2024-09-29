@@ -9,6 +9,8 @@ import getPort from "get-port";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+import ESLintWebpackPlugin from "eslint-webpack-plugin";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 
 export default async (env, argv) => {
@@ -77,6 +79,16 @@ export default async (env, argv) => {
     },
     // Plugins
     plugins: [
+      // TODO: Configure ESLint with TypeScript correctly.
+      // new ESLintWebpackPlugin({
+      //   extensions: [".tsx", ".ts", ".jsx", ".js"],
+      //   exclude: ['node_modules', 'dist'],
+      //   eslintPath: path.resolve(),
+      // }),
+
+      // Only for TypeScript Type-Checking because babel-loader is only transpiling not type-checking
+      new ForkTsCheckerWebpackPlugin(),
+
       new CopyPlugin({
         patterns: [
           {

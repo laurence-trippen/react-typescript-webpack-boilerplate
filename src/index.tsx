@@ -8,6 +8,6 @@ const root = createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <div>
     <h1>Test</h1>
-    <App />
+    <App title="Some Title" />
   </div>
 );

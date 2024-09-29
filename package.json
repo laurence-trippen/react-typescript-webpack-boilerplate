@@ -6,7 +6,7 @@
   "private": true,
   "main": "src/index.tsx",
   "scripts": {
-    "dev": "webpack serve --open",
+    "dev": "webpack serve",
     "build": "webpack --mode production",
     "test": "",
     "lint": ""
@@ -27,9 +27,12 @@
     "babel-loader": "^9.2.1",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "eslint-webpack-plugin": "^4.2.0",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
     "get-port": "^7.1.0",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
+    "typescript": "^5.6.2",
     "webpack": "^5.95.0",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",

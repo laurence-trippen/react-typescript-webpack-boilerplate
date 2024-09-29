@@ -4,9 +4,8 @@ by Laurence Trippen
 
 ### Features
 
-- [x] TypeScript
+- [x] TypeScript with extra Type-Checking step (not only transpiling...)
 - [x] Babel
-- [x] CSS Modules
 - [ ] ESLint
 - [ ] Prettier
 - [ ] Jest
