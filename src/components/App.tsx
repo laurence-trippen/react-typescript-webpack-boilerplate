@@ -1,3 +1,5 @@
+import Counter from "./Counter";
+
 type AppProps = {
   title: string;
 };
@@ -6,9 +8,10 @@ function App(props: AppProps) {
   const { title } = props;
 
   return (
-    <div>
-      <h1 className={""}>{title}</h1>
-    </div>
+    <>
+      <h1>{title}</h1>
+      <Counter />
+    </>
   );
 }
 
