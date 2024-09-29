@@ -58,13 +58,17 @@ export default async (env, argv) => {
             },
           },
         },
-        // CSS & Styles
+        // SCSS & Styles
         {
-          test: /\.css$/,
-          // Executed from last to first
-          // 1. css-loader: load CSS from JS imports
-          // 2. style-loader: put CSS into <style> tag
-          use: ["style-loader", "css-loader"],
+          test: /\.s[ac]ss$/i,
+          use: [
+            // Creates `style` nodes from JS strings
+            "style-loader",
+            // Translates CSS into CommonJS
+            "css-loader",
+            // Compiles Sass to CSS
+            "sass-loader",
+          ],
         },
         // Raw Assets
         {

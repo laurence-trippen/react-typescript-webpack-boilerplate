@@ -1,4 +1,4 @@
-import "./css/globals.css";
+import "./scss/main.scss";
 
 import { createRoot } from "react-dom/client";
 
