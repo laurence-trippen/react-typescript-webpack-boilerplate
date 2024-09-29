@@ -7,7 +7,13 @@ by Laurence Trippen
 - [x] TypeScript with extra Type-Checking step (not only transpiling...)
 - [x] Babel
 - [x] Jest
-- [ ] React Testing Library
+- [x] React Testing Library
+
+#### Styling Options
+- [ ] SCSS
+- [ ] PostCSS with Tailwind
+
+#### Optional
 - [ ] ESLint?
 - [ ] Prettier?
 - [ ] Cypress?
