@@ -6,10 +6,10 @@ by Laurence Trippen
 
 - [x] TypeScript with extra Type-Checking step (not only transpiling...)
 - [x] Babel
-- [ ] ESLint
-- [ ] Prettier
-- [ ] Jest
+- [x] Jest
 - [ ] React Testing Library
+- [ ] ESLint?
+- [ ] Prettier?
 - [ ] Cypress?
 - [ ] Storybook?
 
@@ -23,4 +23,7 @@ npm run dev
 
 # for production
 npm run build
+
+# for Jest unit-testing
+npm test
 ```
