@@ -1,7 +1,7 @@
 {
   "name": "react-typescript-webpack5-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "My React starter template with TypeScript & Webpack bundling.",
   "type": "module",
   "private": true,
   "main": "src/index.tsx",
