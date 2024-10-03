@@ -1,3 +1,5 @@
+![Logo](https://cloud-space.smartelephantapps.com/react-ts-webpack-logo.png)
+
 # React TypeScript Webpack5 Boilerplate
 
 by Laurence Trippen
