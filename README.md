@@ -10,8 +10,8 @@ by Laurence Trippen
 - [x] React Testing Library
 
 #### Styling Options
-- [ ] SCSS
-- [ ] PostCSS with Tailwind
+- [x] SCSS
+- [x] PostCSS with Tailwind
 
 #### Optional
 - [ ] ESLint?
@@ -20,6 +20,10 @@ by Laurence Trippen
 - [ ] Storybook?
 
 ### Usage
+
+* For `Vanilla CSS` use [main](https://github.com/laurence-trippen/react-typescript-webpack-boilerplate) branch.
+* For `SCSS` checkout [feature/scss](https://github.com/laurence-trippen/react-typescript-webpack-boilerplate/tree/feature/scss) branch.
+* For `Post CSS & Tailwind` checkout [feature/postcss](https://github.com/laurence-trippen/react-typescript-webpack-boilerplate/tree/feature/postcss) branch.
 
 ```bash
 npm i
